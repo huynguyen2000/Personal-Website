@@ -1,0 +1,30 @@
+.About{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 5%;
+    
+    .ProfileLeft{
+        grid-area: left;
+
+        >img{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .TextRight{
+        display: flex;
+        flex-direction: column;
+        grid-area: right;
+        justify-content: center;
+
+        .Who{
+            padding-bottom: 10%;
+        }
+    }
+}

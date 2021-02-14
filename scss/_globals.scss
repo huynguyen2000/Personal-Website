@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $almostWhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Wrapper {
+    padding: 0px 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Title{
+    padding-bottom: 15px;
+    font-size: 45px;
+    @include breakpoint(large) { font-size: 40px; }
+    @include breakpoint(medium) { font-size: 35px; }
+    @include breakpoint(small) { font-size: 30px; }
+}
+
+.Text{
+    opacity: 0.75;
+    font-size: 20px;
+    @include breakpoint(large) { font-size: 15px; }
+    @include breakpoint(medium) { font-size: 10px; }
+    @include breakpoint(small) { font-size: 5px; }
+}

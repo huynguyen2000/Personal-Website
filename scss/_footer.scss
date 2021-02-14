@@ -1,0 +1,48 @@
+.Footer{
+    height: 200px;
+    width: 100%;
+    background-color: $grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    .Icons{
+        width: 100%;
+        position: absolute;
+        bottom: 85px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        >a{
+            transition: opacity ease-in-out 200ms;
+            &:not(:nth-child(3)){
+                margin-right: 7%;
+            }
+            >img{
+                height: 50px;
+                width: auto;
+            }
+            &:hover{
+                opacity: 0.75;
+            }
+        }
+    }
+
+    span{
+        content: "";
+        height: 2px;
+        width: 60%;
+        margin: 2% 0px;
+        background-color: $lightGrey;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 10px;
+    }
+}

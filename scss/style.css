@@ -1,0 +1,487 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Wrapper {
+  padding: 0px 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Title {
+  padding-bottom: 15px;
+  font-size: 45px;
+}
+
+@media (max-width: 1440px) {
+  .Title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .Title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Title {
+    font-size: 30px;
+  }
+}
+
+.Text {
+  opacity: 0.75;
+  font-size: 20px;
+}
+
+@media (max-width: 1440px) {
+  .Text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .Text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Text {
+    font-size: 5px;
+  }
+}
+
+.Nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #101114;
+  z-index: 10;
+}
+
+.Nav > a {
+  position: relative;
+  color: #ababab;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 3%;
+  -webkit-transition: color ease-in-out 200ms;
+  transition: color ease-in-out 200ms;
+}
+
+.Nav > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  margin-top: 4px;
+  width: 100%;
+  background-color: #4b6cc1;
+  border-radius: 50px;
+  -webkit-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
+  opacity: 0;
+}
+
+.Nav > a:hover {
+  color: white;
+}
+
+.Nav > a:hover::after {
+  opacity: 1;
+}
+
+.Nav .Logo {
+  margin: 0;
+  margin-right: auto;
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.Nav .Logo::after {
+  height: 4px;
+}
+
+.Header {
+  background-color: #191a1d;
+  color: white;
+  padding-top: calc(7% + 100px);
+  padding-bottom: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer {
+  height: 200px;
+  width: 100%;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.Footer .Icons {
+  width: 100%;
+  position: absolute;
+  bottom: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .Icons > a {
+  -webkit-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
+}
+
+.Footer .Icons > a:not(:nth-child(3)) {
+  margin-right: 7%;
+}
+
+.Footer .Icons > a > img {
+  height: 50px;
+  width: auto;
+}
+
+.Footer .Icons > a:hover {
+  opacity: 0.75;
+}
+
+.Footer span {
+  content: "";
+  height: 2px;
+  width: 60%;
+  margin: 2% 0px;
+  background-color: #ababab;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 10px;
+}
+
+.Home {
+  padding-top: 70.25%;
+  width: 100%;
+  height: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../imgs/home_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../imgs/home_background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.Container {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.HomeTitle {
+  padding-top: 17%;
+  color: #f6f6f6;
+  font-size: 80px;
+}
+
+@media (max-width: 1440px) {
+  .HomeTitle {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .HomeTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeTitle {
+    font-size: 35px;
+  }
+}
+
+.HomeText {
+  color: #ababab;
+  font-size: 40px;
+}
+
+@media (max-width: 1440px) {
+  .HomeText {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .HomeText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeText {
+    font-size: 15px;
+  }
+}
+
+.HomeFooter {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  height: 10%;
+  opacity: 0.75;
+}
+
+.HomeBody {
+  overflow: hidden;
+}
+
+.Qualifications {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "left blank right";
+  -ms-grid-columns: 0.85fr 0.15fr 1fr;
+      grid-template-columns: 0.85fr 0.15fr 1fr;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.Qualifications .Info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Qualifications .Info .Skills {
+  padding-bottom: 10%;
+}
+
+.Qualifications .Info .Text > a {
+  color: #4b6cc1;
+  -webkit-transition: opacity ease-in-out 100ms;
+  transition: opacity ease-in-out 100ms;
+}
+
+.Qualifications .Info .Text > a:hover {
+  opacity: 0.75;
+}
+
+.Qualifications .Resume {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Qualifications .Resume > a {
+  position: relative;
+}
+
+.Qualifications .Resume > a > img {
+  height: auto;
+  width: 100%;
+}
+
+.Qualifications .Resume > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
+}
+
+.Qualifications .Resume > a:hover::after {
+  opacity: 0.25;
+}
+
+.About {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "left right";
+  -ms-grid-columns: 0.4fr 0.6fr;
+      grid-template-columns: 0.4fr 0.6fr;
+  gap: 5%;
+}
+
+.About .ProfileLeft {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+}
+
+.About .ProfileLeft > img {
+  width: 100%;
+  height: auto;
+}
+
+.About .TextRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About .TextRight .Who {
+  padding-bottom: 10%;
+}
+
+.Portfolio {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.Portfolio .Slider {
+  width: 100%;
+}
+
+.Portfolio .Slider .Slides {
+  width: 60%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  -webkit-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.Portfolio .Slider .Slides.is-selected {
+  opacity: 1;
+}
+
+.Portfolio .Slider .Slides > a {
+  font-size: 50px;
+  color: white;
+}
+
+.Portfolio .Slider #slide1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../imgs/test.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/test.jpg");
+}
+
+.Portfolio .Slider #slide2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../imgs/test2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/test2.jpg");
+}
+
+.Portfolio .Slider #slide3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../imgs/test3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/test3.jpg");
+}
+
+.Portfolio .Slider #slide4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../imgs/test4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/test4.jpg");
+}
+
+.Portfolio .Slider #slide5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../imgs/test5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/test5.jpg");
+}
+
+.Service {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/*# sourceMappingURL=style.css.map */

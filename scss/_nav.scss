@@ -1,0 +1,51 @@
+.Nav{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $black;
+    z-index: 10;
+
+    >a{
+        position: relative;
+        color: $lightGrey;
+        font-size: 25px;
+        font-weight: lighter;
+        margin-left: 3%;
+        transition: color ease-in-out 200ms;
+
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 3px;
+            margin-top: 4px;
+            width: 100%;
+            background-color: $blue;
+            border-radius: 50px;
+            transition: opacity ease-in-out 200ms;
+            opacity: 0;
+        }
+
+        &:hover{
+            color: white;
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+
+    .Logo{
+        margin: 0;
+        margin-right: auto;
+        color: white;
+        font-size: 30px;
+        font-weight: normal;
+
+        &::after{
+            height: 4px;
+        }
+    }
+}

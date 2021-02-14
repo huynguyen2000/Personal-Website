@@ -1,0 +1,49 @@
+.Portfolio{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .Slider{
+        width: 100%;
+
+        .Slides{
+            width: 60%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            transition: opacity ease-in-out 200ms;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+
+            &.is-selected{
+                opacity: 1;
+            }
+
+            >a{
+                font-size: 50px;
+                color: white;
+            }
+        }
+
+        #slide1{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../imgs/test.jpg');
+        }
+
+        #slide2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../imgs/test2.jpg');
+        }
+
+        #slide3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../imgs/test3.jpg');
+        }
+        #slide4{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../imgs/test4.jpg');
+        }
+        #slide5{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../imgs/test5.jpg');
+        }
+    }
+}
